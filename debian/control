@@ -10,6 +10,20 @@ Build-Depends:
  openstack-pkg-tools (>= 21ubuntu5~),
  python-all (>= 2.6),
  python-all-dev (>= 2.6.6-3~)
+Build-Conflicts: python-cjson
+Standards-Version: 3.9.6
+Homepage: http://launchpad.net/nova
+Vcs-Browser: http://bazaar.launchpad.net/~ubuntu-server-dev/nova/kilo/files
+Vcs-Bzr: https://code.launchpad.net/~ubuntu-server-dev/nova/kilo
+XS-Testsuite: autopkgtest
+X-Python-Version: >= 2.7
+
+Package: python-nova
+Architecture: all
+Section: python
+Depends:
+ ${misc:Depends},
+ ${python:Depends}
 Suggests: python-ldap
 Conflicts: python-cjson
 XB-Python-Version: ${python:Versions}
