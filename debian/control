@@ -10,6 +10,7 @@ Build-Depends:
  openstack-pkg-tools (>= 21ubuntu5~),
  python-all (>= 2.6),
  python-all-dev (>= 2.6.6-3~)
+ python-setuptools
 Build-Conflicts: python-cjson
 Standards-Version: 3.9.6
 Homepage: http://launchpad.net/nova
