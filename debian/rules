@@ -28,8 +28,8 @@ override_dh_auto_build:
 ifeq (,$(findstring nodocs, $(DEB_BUILD_OPTIONS)))
 	mkdir -p doc/build/html
 	mkdir -p doc/build/man
-	#sphinx-build -b man doc/source doc/build/man
-	#sphinx-build -b html doc/source doc/build/html
+	sphinx-build -b man doc/source doc/build/man
+	sphinx-build -b html doc/source doc/build/html
 endif
 
 get-orig-source:
