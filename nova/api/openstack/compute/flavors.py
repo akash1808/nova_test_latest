@@ -73,6 +73,7 @@ class Controller(wsgi.Controller):
         sort_key = req.params.get('sort_key') or 'flavorid'
         sort_dir = req.params.get('sort_dir') or 'asc'
         limit, marker = common.get_limit_and_marker(req)
+        print "+++++++Tools Inside get_flavors---->testing++++++Tools"
         context = req.environ['nova.context']
         if context.is_admin:
             # Only admin has query access to all flavor types
